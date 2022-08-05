@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="win"> </p>
+
+    <script>
+        function myWind() {
+            var h = window.outerHeight;
+            var w = window.outerWidth;
+            var win = "Window width is "+ w + ", Windows height is " +h ;
+            document.getElementById("win").innerHTML=win;
+        }
+
+        window.onresize = myWind;
+    </script>
+
+<!-- <p id="result"></p>
+<script>
+    function displayWindowSize() {
+        var w = window.outerWidth;
+        var h = window.outerHeight;
+        var txt = "Window size: width=" + w + ", height=" + h;
+        document.getElementById("result").innerHTML = txt;
+    }
+    window.onresize = displayWindowSize;
+</script> -->
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function highlightInput(elm) {
+            elm.style.background= "#ccffee";
+            
+        }
+
+    </script>
+
+    <h2>JavaScript Handling the Focus Event</h2>
+    <input type="text" onfocus="highlightInput(this)">
+    <button type="button">Click me</button>
+    <hr>
+
+    <h2>JavaScript Handling the Blur Event</h2>
+    <input type="text" onblur="alert('You have fouus out from the input type')">
+    <button>Click me</button>
+    <hr>
+
+    <h2>JavaScript Handling the Change Even</h2>
+    <select onchange="alert('You haved changed the oprion')">
+        <option>Value 1</option>
+        <option>Value 2</option>
+        <option>Value 3</option>
+        <option>Value 4</option>
+    </select>
+    <hr>
+
+    <h2>JavaScript Handling the Submit Event</h2>
+    <form onsubmit="alert('You have submited the form!')">
+    <label> Name: </label>
+    <input type="text" name="name" required>
+    <input type="submit" value="submit" >
+
+
+    
+    </form>
+
+
+</body>
+</html>
