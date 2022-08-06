@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = [7,45,9,25,12,369,405879];
+        function findMax(array){
+            return Math.max.apply(null,array);
+        }
+
+        function findMin(array){
+            return Math.min.apply(null,array);
+        }
+
+       
+
+        document.write(findMax(x) +"</br>");
+        document.write(findMin(x));
+       
+    </script>
+</body>
+</html>
