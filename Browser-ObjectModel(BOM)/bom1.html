@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function windowSize(){
+            w=innerWidth;
+            h=innerHeight;
+            alert("Window height is "+h+" and width is "+w);
+        }
+
+        function getResilution(){
+            alert("With is "+screen.width +" Height is " +screen.height);
+        }
+
+        function getColorDepth(){
+            alert("Color depth is "+ screen.colorDepth);
+        }
+
+        function getColorPixel(){
+            alert("Color pixel is " + screen.pixelDepth);
+        }
+
+        function getUrl(){
+            alert("URL of this page is : " + window.location.href);
+        }
+
+    </script>
+
+<button onclick="windowSize()">Click to get Window Size</button><br><br>
+<button onclick="getResilution()">Click to get scern Size</button><br><br>
+<button onclick="getColorDepth()">Click to get Color depth</button><br><br>
+<button onclick="getColorPixel()">Click to get Color pixel</button><br><br>
+<button onclick="getUrl()">Click to get Window Location</button><br><br>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title"> Hello Java Script!</h1>
+        <p id="oldp">I am a simple paragraph ,I will be replace by a new para!</p>
+        <button onclick="replacePara()"> Click to replace</button>
+    </div>
+
+    <script>
+        function replacePara(){
+            var parentEle = document.getElementById("main");
+            var oldPara = document.getElementById("oldp");
+
+            var newPara = document.createElement("p");
+            var newCont = document.createTextNode("I am new para !");
+
+            newPara.appendChild(newCont);
+            parentEle.replaceChild(newPara,oldPara);
+        }
+
+    </script>
+</body>
+</html>

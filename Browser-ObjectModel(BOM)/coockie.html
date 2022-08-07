@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkCookie(){
+            if (navigator.cookieEnabled) {
+                alert("Your browser has cookie enable!");
+            } else {
+                alert("Your browser doesnot have cookie enable!");
+            }
+        }
+
+        function checkLang(){
+            alert("Language of browser is: "+ navigator.language)
+        }
+
+        function checkJavaEnabled(){
+            if (navigator.javaEnabled) {
+                alert("Your browser has java enable");
+            } else {
+                alert("Your browser has not enable java");
+            }
+        }
+
+    </script>
+
+    <button onclick="checkCookie();"> Click to check cookie</button> <br><br>
+    <button onclick="checkLang();"> Click to check Language</button> <br><br>
+    <button type="button" onclick="checkJavaEnabled();">Check If Java is Enabled</button>
+
+</body>
+</html>

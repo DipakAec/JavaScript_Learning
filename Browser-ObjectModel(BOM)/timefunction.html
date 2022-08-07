@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #tid,#btn{
+            background: hwb(0 0% 91%);
+            padding: 20px;
+            margin: 20px 0;
+            color: lime;
+            display: block;
+            font: 48px monospace;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var timeInterval;
+        function showTime(){
+            var d= new Date();
+            document.getElementById("tid").innerHTML=d.toLocaleTimeString();
+        }
+        function stopClock(){
+            clearInterval(timeInterval);
+        }
+        var timeInterval = setInterval(showTime, 1000);
+    </script>
+    <p id="btn">Time is <span id="tid"></span></p>
+    <button id="btn" onclick="stopClock();">Click to stop clock</button>
+    <button id="btn" onclick="setInterval(showTime, 1000);"> Restart Clock</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="hid">Hello World</h1>
+        <p id="child"> I am simple text.Click on button bellow to remove me!</p>
+        <button onclick="removeEle()"> Click me</button>
+
+    </div>
+
+    <script>
+        function removeEle(){
+
+            var pele = document.getElementById("main");
+            var cele = document.getElementById("child");
+            pele.removeChild(cele);
+        }
+    </script>
+</body>
+</html>
