@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximun and Minimum</title>
+</head>
+<body>
+    <script>
+        var a = [15,7,89,5,3];
+        document.write("maximum number is: " +Math.max.apply(null,a) +"<br>");
+        document.write("manimum number is: " +Math.min.apply(null,a) +"<br>");
+
+        //Anather way from ES6
+
+        document.write("maximum number is: " +Math.max(...a)+"<br>");
+        document.write("manimum number is: " +Math.min(...a)+"<br>");
+    </script>
+</body>
+</html>
