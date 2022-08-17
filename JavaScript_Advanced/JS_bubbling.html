@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        div, p, a{
+            padding: 15px 30px;
+            display: block;
+        }
+        div{
+            background: rgb(171, 176, 185);
+        }
+        p{
+            background: rgb(164, 229, 173);
+        }
+        a{
+            background: rgb(149, 231, 239); 
+        }
+    </style>
+    <title>The Bubbling Phase</title>
+</head>
+<body>
+    
+    <div onclick="alert('Bubbling: ' + this.tagName)">
+        div
+        <p onclick="alert('Bubbling: ' + this.tagName)">p 
+            <a onclick="alert('Bubbling: ' + this.tagName)">click me</a>
+        </p>
+    </div>   
+    
+    
+</body>
+</html>
